@@ -22,7 +22,7 @@
     "validate"
   ],
   "author": "keng42",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/keng42/altcoin-address-validator/issues"
   },
