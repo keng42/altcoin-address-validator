@@ -11,3 +11,10 @@ const chain2class = {
   trx: Tron,
 };
 
+export function isValidAddress(
+  chain: 'ethereum' | 'tron' | 'eth' | 'trx',
+  address: string,
+  network: 'main' | 'testnet' = 'main'
+): boolean {
+  return chain2class[chain].isValidAddress(address, network);
+}
