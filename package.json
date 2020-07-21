@@ -1,6 +1,6 @@
 {
   "name": "altcoin-address-validator",
-  "version": "0.0.1-alpha.9",
+  "version": "0.0.1-alpha.10",
   "description": "Altcoin address(hdwallet) validator",
   "main": "index.js",
   "scripts": {
