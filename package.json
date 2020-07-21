@@ -1,11 +1,12 @@
 {
   "name": "altcoin-address-validator",
-  "version": "0.0.1-alpha.6",
+  "version": "0.0.1-alpha.7",
   "description": "Altcoin address(hdwallet) validator",
   "main": "index.js",
   "scripts": {
     "test": "mocha -r ts-node/register test/**/*.spec.ts",
-    "build": "rm -rf ./lib/* && tsc -p tsconfig.json"
+    "build": "rm -rf ./lib/* && tsc -p tsconfig.json",
+    "smart-publish": "sh publish.sh"
   },
   "repository": {
     "type": "git",
