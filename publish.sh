@@ -9,12 +9,12 @@ echo $PACKAGE_VERSION
 if [[ $PACKAGE_VERSION =~ "alpha" ]]
 then
     echo "alpha"
-    # npm publish --tag alpha
+    npm publish --tag alpha
 elif [[ $PACKAGE_VERSION =~ "beta" ]]
 then
     echo "beta"
-    # npm publish --tag beta
+    npm publish --tag beta
 else
     echo "latest"
-    # npm publish 
+    npm publish 
 fi
