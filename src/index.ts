@@ -16,5 +16,8 @@ export function isValidAddress(
   address: string,
   network: 'main' | 'testnet' = 'main'
 ): boolean {
+  if (!chain2class[chain]) {
+    throw new Error('invalid chain');
+  }
   return chain2class[chain].isValidAddress(address, network);
 }
