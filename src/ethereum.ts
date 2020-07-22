@@ -1,3 +1,12 @@
+/**
+ * Ethereum address validator
+ *
+ * Originally written by:
+ * https://github.com/ognus/wallet-address-validator/blob/master/src/ethereum_validator.js
+ *
+ * created by keng42 @2020-07-21 17:06:04
+ */
+
 import { keccak256 } from 'js-sha3';
 
 export class Ethereum {

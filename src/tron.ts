@@ -1,3 +1,12 @@
+/**
+ * Tron address validator
+ *
+ * Originally written by:
+ * https://github.com/christsim/multicoin-address-validator/blob/master/src/tron_validator.js
+ *
+ * created by keng42 @2020-07-21 17:06:04
+ */
+
 import jsSHA from 'jssha';
 import { decodeBase58, byteArray2hexStr, hexStr2byteArray } from './utils';
 

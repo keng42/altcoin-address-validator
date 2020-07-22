@@ -1,3 +1,12 @@
+/**
+ * Hex encoding/decoding
+ *
+ * Originally written by:
+ * https://github.com/christsim/multicoin-address-validator/blob/master/src/crypto/utils.js
+ *
+ * created by keng42 @2020-07-21 17:06:04
+ */
+
 function isHexChar(c: string) {
   if (
     (c >= 'A' && c <= 'F') ||

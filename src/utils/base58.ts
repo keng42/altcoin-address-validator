@@ -1,3 +1,17 @@
+/**
+ * Base58 encoding/decoding
+ *
+ * Originally written by Mike Hearn for BitcoinJ
+ * Copyright (c) 2011 Google Inc
+ * Ported to JavaScript by Stefan Thomas
+ * Merged Buffer refactorings from base58-native by Stephen Pair
+ * Copyright (c) 2013 BitPay Inc
+ * 
+ * https://github.com/ognus/wallet-address-validator/blob/master/src/crypto/base58.js
+ *
+ * created by keng42 @2020-07-21 17:06:04
+ */
+
 const ALPHABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
 const ALPHABET_MAP: { [key: string]: number } = {};
 for (let i = 0; i < ALPHABET.length; ++i) {
