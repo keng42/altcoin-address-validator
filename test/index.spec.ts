@@ -15,6 +15,16 @@ describe('validate altcoin address', () => {
     const isValid = isValidAddress('trx', 'TA9FnQrLGdgLW6cwBKue9DyqSBz1UNzUMR');
     expect(isValid).to.be.equal(true);
   });
+
+  it('should throw error when the chain is not supported', () => {
+    expect(() => {
+      isValidAddress(
+        // @ts-ignore
+        'invalid-chain',
+        'TA9FnQrLGdgLW6cwBKue9DyqSBz1UNzUMR'
+      );
+    }).to.throw();
+  });
 });
 
 describe('validate ethereum address', () => {
